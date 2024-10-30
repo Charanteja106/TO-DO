@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container"> 
+      <header>
+        <div id="nav-top" style="color: aliceblue;">
+            <button  class="menu-btn" style="color: aliceblue;">
+                <i id="main" class="fa-solid fa-bars"></i>
+            </button>
+            <p class="hide">Menu</p>
+        </div>
+
+        <nav class="menu-bar">
+            <ul>
+                <li class="head1">
+                    <a href="#navbar-1"><i id="matter1" class="fa-solid fa-sun"></i> My Day</a>
+                </li>
+
+                <li class="head2"> 
+                    <a href="#navbar-2"><i id="matter2" class="fa-regular fa-star"></i> Important</a>
+                </li>
+
+                <li class="head3"> 
+                    <a href="#navbar-3"><i id="matter3" class="fa-solid fa-table-cells"></i> Planned </a>
+                </li>
+
+                <li class="head4"> 
+                    <a href="#navbar-4"><i id="matter4" class="fa-regular fa-user"></i> Assigned to me </a>
+                </li>
+
+                <li class="head5"> 
+                    <a href="#navbar-5"><i id="matter5" class="fa-regular fa-flag"></i> Flagged email </a>
+                </li>
+
+                <li class="head6"> 
+                    <a href="#navbar-6"><i id="matter6" class="fa-solid fa-house"></i> Tasks </a>
+                </li>
+            </ul>
+        </nav>
+      </header>
+   
+      <!-- sec-1 -->
+
+    
+    <section id="navbar-1">
+        <button class="bg-color" onclick="myFunc()" ondblclick="MYFUNC2()">
+            <i class="fa-solid fa-ellipsis"></i>
+        </button>
+            <!-- hover-text -->
+        <p class="hide-2">Theme</p>
+
+                <!-- hover -COLORS-->
+         <div class="color1-image">
+            <div class="part-a">
+            <img  class="color-1" height="50px" width="50px" onclick="mytheme1()" src="image1.png" >
+            <img  class="color" height="50px" width="50px" onclick="mytheme2()"  src="image2.png" >
+            <img  class="color" height="50px" width="50px" onclick="mytheme3()" style="color:black;" src="image3.png" >
+            </div>
+
+            <div class="part-b">
+                <img class="color"  height="50px" width="50px" onclick="mytheme4()" style="background-color: bisque;" src="image4.png">
+                <img class="color" height="50px" width="50px"  onclick="mytheme5()" style="background-color: blueviolet;" src="image5.png" >
+                <img class="color" height="50px" width="50px"  onclick="mytheme6()" style="background-color: darkblue;" src="image6.png" >
+            </div>
+
+            <div class="part-c">
+                
+                <img height="50px" width="50px" onclick="wallpaper1()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmpa-OPGCHyX-GPQRrwoR289o79lh94R-ERw&s">
+                <img height="50px" width="50px" onclick="wallpaper2()" src="https://img.freepik.com/premium-photo/beautiful-lakes-mountains-artwork_1194790-180.jpg?semt=ais_hybrid">
+                <img height="50px" width="50px" onclick="wallpaper3()" src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?semt=ais_hybrid">
+            </div>
+
+         </div>
+
+        <nav class="nav2" >
+            <i class="fa-solid fa-sun"></i>
+            My Day
+        </nav>
+        <div class="middle-head">
+            <img class="image" src="calendar.png" alt="Loading">
+            <h3>Focus on your day</h3>
+            <p>Get things done with My Day , a list that refreshes every day.</p>
+        </div>
+
+        <div class="add-task-container">
+            <input class="input-bar" type="text" placeholder="Add Task">
+            <button class="add-task">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <ul class="task-container"> </ul>
+    </section>
+
+    <!-- SEC-2 -->
+
+    <section id="navbar-2" > 
+        <button class="bg-color"  onclick="myF2()" style="color: aliceblue;">
+            <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <p class="hide-2">Theme</p>
+
+       
+        
+        <nav class="nav2">
+            <i class="fa-regular fa-star"></i>
+            Important
+        </nav>
+
+        <div class="middle-head">
+            <img class="image" src="https://www.shutterstock.com/image-photo/important-things-text-middle-loop-260nw-1846787101.jpg"
+            style="height: 150px;" >
+            <h3>Focus on your day</h3>
+            <b> mark Important ,Make happy</b>
+        </div>
+
+        <div class="add-task-container">
+            <input class="input-bar" type="text" placeholder="Add Task">
+            <button class="add-task">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <ul class="task-container"> </ul>
+
+    </section>
+
+    <!-- sec-3 -->
+
+    <section id="navbar-3">
+
+        <button class="bg-color"  onclick="myF3()" style="color: black;">
+            <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <p class="hide-2">Theme</p>
+      
+        <nav class="nav2" style="color: #ddd;">
+            <i class="fa-solid fa-table-cells"></i>
+            Planned
+        </nav>
+
+        <div class="add-task-container">
+            <input class="input-bar" type="text" placeholder="Add Task" >
+            <button class="add-task">
+                <i class="fa-solid fa-plus"></i>
+            </button>  
+        </div>
+
+        <ul class="task-container"> </ul>
+
+    </section>
+
+    <!-- sec-4 -->
+
+    <section id="navbar-4">
+
+        <button class="bg-color"  onclick="myF4()" style="color: black;">
+            <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <p class="hide-2">Theme</p>
+
+        <nav class="nav2" style="color: crimson;">
+            <i class="fa-regular fa-user"></i>
+            Assigned to me
+        </nav>
+
+        <div class="add-task-container">
+            <input class="input-bar" type="text" placeholder="Add Task">
+            <button class="add-task">
+                <i class="fa-solid fa-plus"></i>
+            </button> 
+        </div>
+
+        <ul class="task-container"> </ul>
+
+    </section>
+    
+    <!-- sec-5 -->
+
+    <section id="navbar-5">
+        <button class="bg-color"  onclick="myF5()" style="color: black;">
+            <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <p class="hide-2">Theme</p>
+
+        <nav class="nav2" style="color: white;">
+            <i class="fa-regular fa-flag"></i>
+            Flagged email
+        </nav>
+
+        <div class="add-task-container">
+            <input class="input-bar" type="text" placeholder="Add Task">
+            <button class="add-task">
+                <i class="fa-solid fa-plus"></i>
+            </button> 
+        </div>
+
+        <ul class="task-container"> </ul>
+
+    </section>
+
+    <!-- sec-6 -->
+
+    <section id="navbar-6">
+
+        <button class="bg-color"  onclick="myF6()" style="color: black;">
+            <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <p class="hide-2">Theme</p>
+
+        <nav class="nav2" style="color:aliceblue;">
+            <i class="fa-solid fa-house"></i>
+            Tasks
+        </nav>
+
+        <div class="add-task-container">
+            <input class="input-bar" type="text" placeholder="Add Task">
+            <button class="add-task">
+                <i class="fa-solid fa-plus"></i>
+            </button> 
+        </div>
+
+        <ul class="task-container"> </ul>
+
+    </section>
+    
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
