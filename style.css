@@ -11,6 +11,31 @@ body{
     height: 100dvh;
  
 }
+
+.straight-bar{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.sign-in{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px 0  0px 85%;
+    height: 50px;
+    font-size: medium;
+    background-color:transparent;
+    border: 1px solid black;
+    box-shadow: 50px;
+
+}
+.sign-in:active{
+    background-color: gray;
+    color: aliceblue;
+    border-color: greenyellow;
+}
+
+
+/* ... */
 header{
     position: absolute;
     top: 10px;
@@ -34,6 +59,7 @@ header{
     border: 1px;
     border-radius: 10px;   
 }
+
 
 
 
@@ -69,7 +95,7 @@ header{
     font-size: 30px;
     background: transparent;
     border: none;
-    position: static;
+    position: relative;
 
 }
 .bg-color:active{
@@ -231,7 +257,8 @@ ul :only-child{
 .hide-2{
     display: none;
     text-align: top;
-    margin-left: 80px;
+    margin-top: 30px;
+    margin-right: 30px;
     width: 60px;
     border-radius: 10px;
     text-align: center;
@@ -261,7 +288,48 @@ ul :only-child{
 
 }
 
+/* login-page */
 
+#page{
+    display: none;
+
+   background-color: tan;
+   padding-left: 30px;
+   padding-top: 50px;
+   margin: 0px 40px 0px 30%;
+   width: 300px;
+   height: 500px;
+   position: absolute;
+   border: 1px solid teal;
+}
+.login-head{
+    padding-bottom: 50px;
+    color: whitesmoke;
+}
+
+.login-head:hover{
+    color:darkslategray;
+    text-decoration: underline;
+}
+.name1{
+    font-size: 22px;
+}
+.inp01{
+    padding: 8px;
+    width: 15rem;
+}
+.submit-btn{
+    padding: 10px;
+    margin-left: 70px;
+    width: 100px;
+    font-size: medium;
+    font-weight: 500;
+    height: 40px;
+}
+.submit-btn:active{
+    background-color: lightseagreen;
+    color: whitesmoke;
+}
 
 
 

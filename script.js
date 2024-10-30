@@ -170,4 +170,23 @@ function wallpaper3(){
 }
 
 
+// login-page
+
+const HeadPage = document.querySelector('#page')
+const SigninBtn = document.querySelector('.sign-in')
+
+
+SigninBtn.addEventListener("click", () =>{
+    HeadPage.style.display="block"
+})
+
+
+ SigninBtn.addEventListener("dblclick" , () =>{
+    HeadPage.style.display='none'
+})
+
+
+
+
+
 
