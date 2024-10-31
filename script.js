@@ -73,16 +73,13 @@ for (let link of links){
 
 
 // ....1
-let result1 = document.querySelector("#navbar-1")
-let MainTheme = document.querySelector(".color1-image")
 
-function myFunc(){
-    MainTheme.style.display="block"
-}
+const BGColor=document.querySelector('.bg-color')
+const BGcontainer = document.querySelector('.c-container')
 
-function MYFUNC2(){
-    MainTheme.style.display='none'
-}
+BGColor.addEventListener('click', () =>{
+    BGcontainer.classList.toggle('active')
+})
 
 // // //  ......2
 
@@ -130,6 +127,7 @@ function myF6(){
 const Theme1 = document.querySelector(".color-1")
 const Nav2 = document.querySelector(".nav2")
 
+
 function mytheme1(){
     document.body.style.background = "lightcoral"
 }
@@ -172,18 +170,18 @@ function wallpaper3(){
 
 // login-page
 
-const HeadPage = document.querySelector('#page')
+const HeadPage = document.querySelector('.page')
 const SigninBtn = document.querySelector('.sign-in')
 
 
+
+
 SigninBtn.addEventListener("click", () =>{
-    HeadPage.style.display="block"
+    HeadPage.classList.toggle('active')
 })
 
 
- SigninBtn.addEventListener("dblclick" , () =>{
-    HeadPage.style.display='none'
-})
+
 
 
 
