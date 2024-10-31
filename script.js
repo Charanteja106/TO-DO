@@ -74,12 +74,7 @@ for (let link of links){
 
 // ....1
 
-const BGColor=document.querySelector('.bg-color')
-const BGcontainer = document.querySelector('.c-container')
 
-BGColor.addEventListener('click', () =>{
-    BGcontainer.classList.toggle('active')
-})
 
 // // //  ......2
 
@@ -123,7 +118,14 @@ function myF6(){
 
 
 // ....themes.....
+const BGColor=document.querySelector('.bg-color')
+const BGcontainer = document.querySelector('.color-container')
 
+BGColor.addEventListener('click', () =>{
+    BGcontainer.classList.toggle('active')
+    // BGcontainer.style.display='block'
+})
+// 
 const Theme1 = document.querySelector(".color-1")
 const Nav2 = document.querySelector(".nav2")
 

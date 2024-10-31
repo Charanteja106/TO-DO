@@ -229,9 +229,7 @@ ul :only-child{
 
 /*  */
 
-#navbar-1{
-    background-color: lightseagreen;
-}
+
 #navbar-2{
     display: none;
     background-color: palevioletred;
@@ -281,7 +279,7 @@ ul :only-child{
 
 /*........ themes... */
 
-.c-container{
+.color-container{
     display: none;
 
     max-width: fit-content;
@@ -295,7 +293,7 @@ ul :only-child{
  
 
 }
-.c-container.active{
+.color-container.active{
     display: block;
     position: absolute;
 }
